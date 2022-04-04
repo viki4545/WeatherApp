@@ -3,7 +3,7 @@ This WeatherApp is a web app where you can search city name to find out the weat
 
 This is made using this following technologies:-
 
-# FrontEnd:-
+# 👩‍💻 FrontEnd:-
 
   1. Html.
   
@@ -13,6 +13,6 @@ This is made using this following technologies:-
   
   4. Bootstrap.
   
- # BackEnd:-
+ # 👨‍💻 BackEnd:-
   
   1. Node.js.
