@@ -9,7 +9,11 @@ const temp_status = document.getElementById('temp_status');
 const data_hide = document.querySelector('.middle_layer')
 // const getInfo = (event) => {
 //     alert('hii');
-// }
+// }    
+
+var key = config.SECRET_API_KEY;
+
+console.log(key);
 
 const getInfo = async(event) => {
     event.preventDefault();
@@ -19,7 +23,7 @@ const getInfo = async(event) => {
         data_hide.classList.add('data-hide');
     }else{
         try{
-            let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=7a5185c63badade1ab1e8b72e8dd57b2`
+            let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=`+ key
             const response = await fetch(url);
             const data = await response.json();
             const arrData = [data];
